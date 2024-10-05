@@ -19,13 +19,14 @@
 #   if false_count >= N-1:
 #     break
 
-print(count)
+# print(count)
 
 N = int(input())
 A = list(map(int, input().split()))
 count = 0
 
 while A.count(0) < N-1:
+  # reverse=Trueとすることで、降順ソートが簡単にできます
   A.sort(reverse=True)
   A[0] -= 1
   A[1] -= 1
