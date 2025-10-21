@@ -10,7 +10,7 @@ for i in range(Q):
 atari = [0] * (N+1)
 hazure = [0] * (N+1)
 for i in range(1, N+1):
-  atari[i] = atari[i-1] #これがないと累積されない 元が0だから
+  atari[i] = atari[i-1] # 前回のあたりの数を引き継ぐ
   hazure[i] = hazure[i-1]
   if A[i-1] == 1:
     atari[i] += 1

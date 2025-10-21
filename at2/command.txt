@@ -1,1 +1,1 @@
-python3 a4.py < input.txt
+python3 b12.py < input.txt
