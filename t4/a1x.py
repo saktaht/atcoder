@@ -10,4 +10,4 @@ for i in range(3, N+1):
     # A[i-2]になってるのはfor文のスタートが3だから
     dp[i] = min(dp[i-1] + A[i-2], dp[i-2] + B[i-3])
     
-print(dp[N])
+print(dp[N]) 
